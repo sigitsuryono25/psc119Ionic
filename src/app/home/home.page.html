@@ -1,0 +1,111 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger" class="glob-toolbar">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="7" style="display: flex;" class="ion-justify-content-center">
+          <ion-title class="glob-header-title">
+            PSC 119 Sukowati Sragen
+          </ion-title>
+        </ion-col>
+        <ion-col size="5" style="text-align: end; display: flex;" class="ion-justify-content-end">
+          <div class="img-container">
+            <img src="/assets/icon/ic_pemda_sragen.png" style="width: 40px;">
+            <img src="/assets/icon/ic_splash.png" style="width: 40px;">
+            <img src="/assets/icon/ic_pmi.png" style="width: 40px;">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <ion-text color="danger">
+          <span>Selamat datang</span>
+        </ion-text>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <ion-text color="danger" class="">
+          <span>Aplikasi Pelaporan Kejadian Kegawatdaruratan Medis, Kecelakaan dan Kebencanaan Kabupaten Sragen</span>
+        </ion-text>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <ion-text color="danger">
+          <span>Hubungi Ambulans PSC 119</span>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row style="display: flex;" class="ion-justify-content-center">
+      <ion-col size="5" style="text-align: center;">
+        <a routerLink="/your-location" class="glob-no-underline">
+          <img style="width: 48px;" src="https://psc-119.server4111.com/assets/img/android-icon/119.png"><br>
+          <ion-text>
+            <span>Telepon Darurat / Pengaduan</span>
+          </ion-text>
+        </a>
+      </ion-col>
+      <ion-col size="5" style="text-align: center;">
+        <img style="width: 48px;" src="https://psc-119.server4111.com/assets/img/android-icon/lokasi-anda.png"><br>
+        <ion-text>
+          <span>Kirim Lokasi Anda</span>
+        </ion-text>
+      </ion-col>
+      <ion-col size="5" style="text-align: center;" class="ion-margin-top">
+        <img style="width: 48px;" src="https://psc-119.server4111.com/assets/img/android-icon/faskes.png"><br>
+        <ion-text>
+          <span>Fasilitas Kesehatan RS/Puskesmas/Klinik</span>
+        </ion-text>
+      </ion-col>
+      <ion-col size="5" style="text-align: center;" class="ion-margin-top">
+        <img style="width: 48px;" src="https://psc-119.server4111.com/assets/img/android-icon/ambulans.png"><br>
+        <ion-text>
+          <span>Posisi Ambulans Terdekat</span>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="ion-text-center">
+    <ion-text color="danger">
+      <span>Hubungi Nomor Lain</span>
+    </ion-text>
+    <ion-grid>
+      <ion-row style="display: flex;" class="ion-justify-content-center">
+        <ion-col size="5" style="text-align: center;">
+          <img style="width: 48px;" src="https://psc-119.server4111.com/assets/img/android-icon/polisi.png"><br>
+          <ion-text>
+            <span>Kepolisian</span>
+          </ion-text>
+        </ion-col>
+        <ion-col size="5" style="text-align: center;">
+          <img style="width: 48px;" src="https://psc-119.server4111.com/assets/img/android-icon/bpbd.png"><br>
+          <ion-text>
+            <span>Penanggulangan Bencana</span>
+          </ion-text>
+        </ion-col>
+        <ion-col size="5" style="text-align: center;" class="ion-margin-top">
+          <img style="width: 48px;" src="https://psc-119.server4111.com/assets/img/android-icon/pemadam.png"><br>
+          <ion-text>
+            <span>Pemadam Kebakaran</span>
+          </ion-text>
+        </ion-col>
+        <ion-col size="5" style="text-align: center;" class="ion-margin-top">
+          <img style="width: 48px;" src="https://psc-119.server4111.com/assets/img/android-icon/pmi.png"><br>
+          <ion-text>
+            <span>Info Stok Darah</span>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="danger">
+    <ion-title class="glob-footer">&copy; Dinas Kesehatan Kabupaten Sragen</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="danger" class="glob-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="glob-header-title">Lapor Dari Lokasi Anda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form class="ion-padding" [formGroup]="loginForm">
+    <ion-item>
+      <ion-label position="floating">Pelapor <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required formControlName="pelapor" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Posisi <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required formControlName="posisi" type="text" readonly></ion-input>
+    </ion-item>
+    <div class="ion-margin-vertical">
+      <ion-text color="danger" class="glob-header-title" >
+        <span>Foto/Gambar</span>
+      </ion-text>
+      <ion-button (click)="onClick()" color="primary" style="display: block;">
+        <ion-icon name="images-outline" slot="start"></ion-icon>
+        Ambil Foto/Galeri
+      </ion-button>
+      <ion-button (click)="onClick()" color="warning" style="display: block;">
+        <ion-icon name="eye-outline" slot="start"></ion-icon>
+        Lihat Pratinjau
+      </ion-button>
+    </div>
+    <ion-item>
+      <ion-label position="floating">Jumlah Korban <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input formControlName="jumlahKorban" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Status Korban <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input formControlName="statusKorban" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Kondisi Korban <ion-text color="danger">*</ion-text></ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+    <div style="text-align: center" class="ion-padding">
+      <ion-button (click)="submitReport()" color="danger">
+        <ion-icon name="send-outline" slot="end" class="ion-margin-start"></ion-icon>
+        Kirim Laporan
+      </ion-button>
+    </div>
+  </form>
+</ion-content>
